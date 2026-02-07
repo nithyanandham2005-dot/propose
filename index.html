@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Proposal Day 🌸</title>
+<body>
+ <source src="4.mp3" type="audio/mp3">
+</audio>
+
+<link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
+
+<style>
+body{
+ margin:0;
+ font-family:'Meera Inimai',sans-serif;
+ background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+ overflow:hidden;
+}
+.page{display:none;height:100vh;padding:20px;text-align:center;}
+.page.active{display:block;}
+.box{
+ background:rgba(255,255,255,0.9);
+ border-radius:20px;
+ padding:20px;
+ max-width:420px;
+ margin:40px auto;
+ box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+h1{color:#c9184a}
+p{line-height:1.8}
+button{
+ padding:12px 22px;
+ border:none;
+ border-radius:25px;
+ background:#ff4d6d;
+ color:#fff;
+ margin:8px;
+ font-size:15px;
+ cursor:pointer;
+ transition:.3s;
+}
+button:hover{transform:scale(1.1)}
+.heart{
+ position:fixed;
+ bottom:-20px;
+ animation:float 6s linear infinite;
+ color:#ff4d6d;
+}
+@keyframes float{
+ 0%{opacity:0;transform:translateY(0)}
+ 50%{opacity:1}
+ 100%{opacity:0;transform:translateY(-100vh)}
+}
+#fireCanvas{
+ position:fixed;
+ top:0;left:0;
+ width:100%;height:100%;
+ pointer-events:none;
+ z-index:999;
+}
+#proposalScene{display:none;font-size:40px;margin-top:20px;}
+.boy{animation:kneel 2s forwards}
+@keyframes kneel{to{transform:translateY(20px) rotateX(60deg)}}
+.ring{
+ font-size:50px;
+ opacity:0;
+ animation:ringPop 2s forwards;
+ animation-delay:2s;
+}
+@keyframes ringPop{to{opacity:1;transform:scale(1.5)}}
+</style>
+</head>
+
+<body>
+
+
+<!-- PAGE 0 -->
+<div class="page active"><div class="box">
+<h1>💖 Proposal Day 💖</h1>
+<p>
+எவ்வளவு சண்டை வந்தாலும்… ❤️‍🩹<br>
+உன்னைத் தேடி வருவது என் உள்ளக் கடல் ❤️‍🔥<br>
+அந்தக் கடல் அன்பை<br>
+முழுவதுமாய் நீ அனுபவிக்க வேண்டும் 😁💓<br>
+நீ வருவாயா டி…<br>
+என் உயிருக்கு உயிரான<br>
+<b>நான் — கயல்விழி 🫂🐹</b>
+</p>
+<button onclick="go(1)">En Ammu ❤️</button>
+</div></div>
+
+<!-- PAGE 1 -->
+<div class="page"><div class="box">
+<h1>🌸 En Ammu</h1>
+<p>
+முன்பட்ட காயத்தால்<br>
+உனக்குக் கிடைக்கும் உண்மையான அன்பை<br>
+நீ தவிர்த்து விடாதே… ❤️‍🩹<br>
+என்னோடு சேர்ந்து<br>
+நான் இறந்தாலும் என் உயிரே,<br>
+கயல்விழி என்னும் உன்னை<br>
+பிரிந்து போகாது 🫂<br>
+இறந்தாலும்<br>
+“கயல்விழி” என்றே<br>
+என் இதயம் துடிக்கும் 💓<br>
+நீ பார்க்க வருவாயா டி<br>
+கயல்விழி 🫂🐼
+</p>
+<button onclick="go(2)">Enn Chello 🐼</button>
+</div></div>
+
+<!-- PAGE 2 -->
+<div class="page"><div class="box">
+<h1>🌸 Enn Chello</h1>
+<p>
+என் அன்பே…<br>
+உன்மேல் கோபம் இருந்தாலும் 😔<br>
+நீ எனக்காக செய்யும்<br>
+சிறு சிறு விஷயங்கள்<br>
+என் உள்ளத்துக்குள்<br>
+அன்பாய் சிரிக்க வைக்கிறது 💌<br>
+என் வெளிப்பட்ட முழு சிரிப்பை 😸<br>
+நீ பார்க்க<br>
+அதைப் பார்த்து நீ சிரிக்க<br>
+தயாரா இருக்கிறாயா டி 🤗<br>
+என் உடம்போடு கலந்த<br>
+கயல்விழி… 🫂🐹
+</p>
+<button onclick="go(3)">Enn Butterscotch 🍬</button>
+</div></div>
+
+<!-- PAGE 3 -->
+<div class="page"><div class="box">
+<h1>🌸 Enn Butterscotch</h1>
+<p>
+என் உடம்போடு சேர்ந்த என் அன்பே ❤️‍🔥<br>
+என் மூச்சே உன்னிடமிருந்து வருகிறது 💋💓<br>
+என் சிரிப்பும் உன்னிடமிருந்து வருகிறது 😸<br>
+என் சோகமும் உன்னிடமிருந்து வருகிறது 🐹<br>
+என் அன்பும் உன்னிடமிருந்து வருகிறது 💓🐼<br>
+என் காதலும், காமமும் உன்னிடமிருந்து வருகிறது ❤️‍🩹💌<br>
+எப்போதும் என் கையைப் பிடித்து<br>
+என்னோடு வருவாயா டி…<br>
+கயல்விழி 🥺🫂
+</p>
+<button onclick="go(4)">Enn Pattu Maa 🧸</button>
+</div></div>
+
+<!-- PAGE 4 -->
+<div class="page"><div class="box">
+<h1>🌸 Enn Pattu Maa</h1>
+<p>
+கயல் ❤️‍🔥<br>
+  கயல் 🐼<br>
+    கயல் 🐹<br>
+என் பாசத்திற்கு சொந்தக்காரியே 💓<br>
+என் அன்புக்கு சொந்தக்காரியே ❤️‍🩹<br>
+என் உயிருக்கு சொந்தக்காரியே 😸<br>
+என் மார்பிற்கு சொந்தக்காரியே 🌚<br>
+என் மூச்சுக்கு சொந்தக்காரியே 😘<br>
+உன்னுடைய அந்த ஒரே சம்மதத்துக்காக<br>
+காத்துக் கொண்டிருக்கிறேன் 🫠
+</p>
+<button onclick="go(5)">Enn White Gell 🤍</button>
+</div></div>
+
+<!-- PAGE 5 -->
+<div class="page"><div class="box">
+<h1>🌸 Enn White Gell</h1>
+<p id="finalText">Accept my proposal? 💍</p>
+<button onclick="yes()">YES 💖</button>
+<button onclick="alert('நான் காத்திருப்பேன்… காலம் வரை 🥺')">NO 😢</button>
+
+<div id="proposalScene">
+<div class="boy">🧍‍♂️</div>
+<div class="ring">💍</div>
+</div>
+</div></div>
+
+<canvas id="fireCanvas"></canvas>
+
+<script>
+const pages=document.querySelectorAll(".page");
+
+function go(n){
+ pages.forEach(p=>p.classList.remove("active"));
+ pages[n].classList.add("active");
+}
+
+function yes(){
+ finalText.innerHTML=`❤️‍🔥 YES ❤️‍🔥<br>
+இனி என் வாழ்க்கை முழுவதும்<br>
+உன் கையைப் பிடித்தே நடப்பேன் 💍<br>
+என் உயிர் — <b>கயல்விழி</b> 🫂❤️`;
+ proposalScene.style.display="block";
+ fireText("KAYALVIZHI");
+}
+
+// floating hearts
+setInterval(()=>{
+ let h=document.createElement("div");
+ h.className="heart";
+ h.innerHTML="❤️";
+ h.style.left=Math.random()*100+"vw";
+ h.style.fontSize=Math.random()*25+15+"px";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),6000);
+},400);
+
+// fire text animation
+const canvas=document.getElementById("fireCanvas");
+const ctx=canvas.getContext("2d");
+canvas.width=innerWidth;
+canvas.height=innerHeight;
+let sparks=[];
+function fireText(text){
+ ctx.clearRect(0,0,canvas.width,canvas.height);
+ ctx.font="80px Meera Inimai";
+ ctx.textAlign="center";
+ ctx.fillText(text,canvas.width/2,canvas.height/3);
+ let img=ctx.getImageData(0,0,canvas.width,canvas.height);
+ for(let y=0;y<img.height;y+=6){
+  for(let x=0;x<img.width;x+=6){
+   if(img.data[(y*img.width+x)*4+3]>150){
+    sparks.push({x,y,vx:(Math.random()-.5)*4,vy:(Math.random()-.5)*4,l:80});
+   }
+  }
+ }
+}
+(function animate(){
+ ctx.clearRect(0,0,canvas.width,canvas.height);
+ sparks.forEach((s,i)=>{
+  s.x+=s.vx;
+  s.y+=s.vy;
+  s.l--;
+  ctx.fillStyle="orange";
+  ctx.fillRect(s.x,s.y,3,3);
+  if(s.l<=0) sparks.splice(i,1);
+ });
+ requestAnimationFrame(animate);
+})();
+</script>
+<body>
+ <source src="4.mp3" type="audio/mp3">
+</audio>
+</body>
+</body>
+</html>
